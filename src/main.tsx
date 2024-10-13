@@ -4,9 +4,11 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 import App from './App.tsx'
 import ErrorPage from './routes/error/error-page.tsx'
+import { Provider } from 'react-redux'
 import { StrictMode } from 'react'
 import { ThemeProvider } from '@/components/theme/theme-provider'
 import { createRoot } from 'react-dom/client'
+import { store } from './DAL/store'
 
 const router = createBrowserRouter([
   {
@@ -14,12 +16,14 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
   },
-]);
+])
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </Provider>
   </StrictMode>,
 )
