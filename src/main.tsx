@@ -16,6 +16,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: '/c/fixed-deposit',
+    element: <App />,
+  },
 ])
 
 createRoot(document.getElementById('root')!).render(
