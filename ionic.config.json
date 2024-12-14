@@ -1,0 +1,7 @@
+{
+  "name": "vite-boilerblate",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}

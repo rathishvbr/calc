@@ -48,3 +48,7 @@ export default tseslint.config({
   },
 })
 ```
+
+Dev setup for IOS and Android 
+ - To run IOS with live reload `ionic cap run ios --livereload --external`
+

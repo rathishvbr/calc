@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">vite-boilerblate</string>
+    <string name="title_activity_main">vite-boilerblate</string>
+    <string name="package_name">vite.boilerblate</string>
+    <string name="custom_url_scheme">vite.boilerblate</string>
+</resources>
